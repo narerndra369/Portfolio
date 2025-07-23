@@ -1,0 +1,46 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc; /* slate-50 */
+    color: #334155; /* slate-700 */
+}
+
+.font-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.nav-link.active {
+    color: #0ea5e9; /* sky-500 */
+    font-weight: 600;
+}
+
+.section-fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tech-tag {
+    background-color: #e0f2fe; /* sky-100 */
+    color: #0c4a6e; /* sky-800 */
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -0.4rem;
+    top: 0.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 9999px;
+    background-color: #e2e8f0; /* slate-200 */
+    border: 3px solid #0ea5e9; /* sky-500 */
+}
